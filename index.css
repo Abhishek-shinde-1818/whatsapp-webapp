@@ -1,0 +1,109 @@
+body,html{
+    padding: 0%;
+    margin: 0;
+}
+#root{
+    height: 100vh;
+    width: 100%;
+    
+    
+}
+#wp{
+    height: 100vh;
+    width: 40vw;
+    border:3px solid green;
+    margin: auto;
+}
+#navbar{
+    height: 50px;
+    width: 100%;
+    border:2px solid green;
+    padding-top: 5px;
+    
+}
+#msg{
+    height: 70vh;
+    width: 100%;
+    
+    position: relative;
+    /* overflow: hidden; */
+     
+}
+
+#ibox{
+    height: 20vh;
+    width: 100%;
+   
+}
+#stext{
+    margin-left: 16%;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 12px;
+}
+#sbutton{
+    margin-left: 3%;
+    width: 70px;
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 12px;
+}
+#text{
+    text-align: right;
+    border: none;
+    background-color: lightgreen;
+}
+
+
+#msgdiv{
+    height: 2vh;
+    width: 8vw;
+    
+    display: flex;
+    flex-direction: row;
+    margin-left: 65%;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: lightgreen;
+    border: 1px;
+    border-radius: 10px;
+}
+#icon{
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+}
+#time{
+  margin-top: 6px;  
+  font-size: small;
+   
+}
+li{
+    list-style: none;
+    border: 1px solid rgb(5, 5, 84);
+    border-radius: 2px;
+   
+   
+    
+}
+
+#menuele{
+    padding-left: 0%;
+    padding-top: 10px;
+    border-width: 2px;
+    border-radius: 5px;    
+}
+#pbutton{
+   width: 60px; 
+   position: absolute;
+  left: 145px;
+  right: 0;
+  bottom: 10px;
+}
+#profile{
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
