@@ -30,13 +30,10 @@ Div2.appendChild(navtext)
 
 
 
-function updateobj(selectedinput)
+function updateobj(text,a)
 {  
    
    const obj={}
-   let text=document.getElementById(selectedinput).value
-   let timestamp=new Date(); 
-   let a=timestamp.toLocaleTimeString(navigator.language, {hour12: false,hour: '2-digit', minute:'2-digit'});
    obj.text=text
    obj.time=a
    arr.push(obj)
@@ -73,6 +70,7 @@ function displaymenu(index)
 
 function copymsg(index){
     let copytext=arr[index].text
+    
     
     navigator.clipboard.writeText(copytext);
   
@@ -159,7 +157,10 @@ function display()
 let inputbox=document.createElement("input")
     inputbox.id="stext"
     inputbox.addEventListener("change",function(){
-      updateobj("stext")
+    let text=inputbox.value
+   let timestamp=new Date(); 
+   let a=timestamp.toLocaleTimeString(navigator.language, {hour12: false,hour: '2-digit', minute:'2-digit'});
+      updateobj(text,a)
     })
 Div4.appendChild(inputbox)      
     
