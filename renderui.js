@@ -70,16 +70,13 @@ function displaymenu(index)
 
 function copymsg(index){
     let copytext=arr[index].text
-    
-    
     navigator.clipboard.writeText(copytext);
-  
-
-    
+     
 }
 function updateEditedData(index){
   let editedText=document.getElementById("stext").value
-  let editedtime=new Date().toLocaleTimeString(); 
+  let timestamp=new Date(); 
+   let editedtime=timestamp.toLocaleTimeString(navigator.language, {hour12: false,hour: '2-digit', minute:'2-digit'}); 
  
   arr[index].text=editedText
   arr[index].time=editedtime
@@ -105,23 +102,22 @@ function delmsg(index)
         arr.splice(index,1)
         display()
        }
-      flag=true
+      
     
 }
-let flag=true
+
 function icon(index)
 {
-  if(flag==true)
-  {
+  
     let icon=document.createElement("img")
     icon.id="icon"
     icon.src="iconimg.svg"
     msgdiv.appendChild(icon)
-    flag=false
+    
     icon.addEventListener("click",function(){
         displaymenu(index)
       })
-  }
+
     
 }
 let msgdiv
