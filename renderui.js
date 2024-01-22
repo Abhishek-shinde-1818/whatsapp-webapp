@@ -80,10 +80,14 @@ function copymsg(index){
     
 }
 function updateEditedData(index){
-    let editedText=document.getElementById("stext").value
-    let editedtime=new Date().toLocaleTimeString(); 
-    arr.splice(index,1)
-    display()
+  let editedText=document.getElementById("stext").value
+  let editedtime=new Date().toLocaleTimeString(); 
+ 
+  arr[index].text=editedText
+  arr[index].time=editedtime
+  
+  arr.pop()
+  display()
 }
 function editmsg(index)
 {
